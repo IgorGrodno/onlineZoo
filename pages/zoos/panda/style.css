@@ -501,6 +501,14 @@ a {
     background: #4b9200;
 }
 
+button:active {
+    background-color: #4b9200;
+}
+
+button:hover {
+    background: #4b9200;
+}
+
 .orange-text {
     color: #f9804b !important;
 }
@@ -657,7 +665,7 @@ a {
 }
 
 .panda-foto {
-    width: 133.5%;
+    width: 63%;
 }
 
 .panda-foto img {
@@ -668,10 +676,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 211%;
+    width: 100%;
 }
 
-.panda-text {
+.gigant-panda-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -752,7 +760,6 @@ a {
 }
 
 .links-list-item {
-    height: 80%;
     width: 80%;
 }
 
@@ -1119,6 +1126,7 @@ a {
 @media (max-width: 639px) {
     .header {
         position: relative;
+        height: 34px;
     }
     .header-content {
         width: 95.75%;
@@ -1137,6 +1145,113 @@ a {
     }
     .logo img {
         width: 64%;
+    }
+    .aside-nav {
+        width: 62px;
+    }
+    .links-list {
+        height: 223px;
+    }
+    .penguin_icon {
+        display: none;
+    }
+    .Sloth_icon {
+        display: none;
+    }
+    .eagle_icon {
+        display: none;
+    }
+    .main-content {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading {
+        font-size: 24px;
+        margin-left: 3%;
+    }
+    .video {
+        width: 100%;
+    }
+    .main-video {
+        height: 168px;
+        width: 93.5%;
+    }
+    .cameras-slider {
+        margin-top: 21px;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        row-gap: 8px;
+        column-gap: 8px;
+    }
+    .small-video-container {
+        width: 47%;
+        height: 70px;
+    }
+    .order1 {
+        display: none;
+    }
+    .order6 {
+        display: none;
+    }
+    .order2 {
+        grid-area: order2;
+    }
+    .order3 {
+        grid-area: order3;
+    }
+    .order4 {
+        grid-area: order4;
+    }
+    .order5 {
+        grid-area: order5;
+    }
+    .panda-block {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .panda-heading {
+        font-size: 24px;
+        justify-content: center;
+    }
+    .panda-block-content {
+        flex-direction: column;
+    }
+    .panda-foto {
+        width: 100%;
+        height: 193px;
+        overflow: hidden;
+    }
+    .gigant-panda-text {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .friend-button {
+        margin-top: 30px;
+    }
+    .line-block {
+        display: none;
+    }
+    .description-block {
+        margin-top: 40px;
+    }
+    .donate-button-main {
+        margin-bottom: 10px;
+    }
+    .description-block {
+        padding-bottom: 80px;
+    }
+    .aside-container {
+        position: absolute;
+        top: 53%;
+        left: 3%;
     }
     .footer-content {
         padding: 0;
@@ -1276,6 +1391,114 @@ a {
     .header-menu {
         display: none;
     }
+    .main-content {
+        margin-top: 20px;
+        margin-left: 3.2%;
+        margin-right: 3.2%;
+        grid-template-areas: ". heading" "aside-container video" "panda-block panda-block" "description-block description-block" "donate donate";
+    }
+    .aside-nav {
+        width: 72px;
+    }
+    .links-list {
+        height: 439px;
+    }
+    .video {
+        align-items: flex-end;
+    }
+    .main-video {
+        width: 94%;
+        height: 278px;
+    }
+    .cameras-slider {
+        width: 92.5%;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "order4 order5 order1" "order4 order5 order6";
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+    .order2 {
+        display: none;
+    }
+    .order3 {
+        display: none;
+    }
+    .order4 {
+        grid-area: order4;
+        justify-self: left;
+    }
+    .order5 {
+        grid-area: order5;
+        justify-self: left;
+    }
+    .order1 {
+        grid-area: order1;
+        align-self: flex-end;
+        justify-self: center;
+    }
+    .order6 {
+        grid-area: order6;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    .slyder-button {
+        width: 43px;
+        height: 43px;
+    }
+    .cameras-slider {
+        margin-top: 20px;
+        width: 94%;
+        align-items: flex-end;
+    }
+    .small-video-container {
+        width: 183px;
+        height: 141px;
+    }
+    .panda-block {
+        margin-top: 60px;
+    }
+    .panda-heading {
+        justify-content: center;
+    }
+    .panda-block-content {
+        flex-direction: column;
+    }
+    .panda-foto {
+        width: 74.5%;
+    }
+    .gigant-panda-text {
+        margin-top: 30px;
+        width: 80.3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 140%;
+        /* or 31px */
+        color: #ABABAB;
+    }
+    .friend-button {
+        margin-left: 35%;
+    }
+    .line-block {
+        display: none;
+    }
+    .description-block {
+        margin-top: 60px;
+    }
+    .diet-block {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .diet-description {
+        padding-top: 6px;
+    }
+    .description-block {
+        padding-bottom: 145px;
+    }
     .footer-content {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -1364,7 +1587,7 @@ a {
         margin-left: 3%;
         margin-right: 3%;
         margin-top: 100px;
-        grid-template-areas: ". heading" "aside-container video" "panda-block panda-block" "description-block description-block" "description-block description-block" "description-block description-block";
+        grid-template-areas: ". heading" "aside-container video" "panda-block panda-block" "description-block description-block" "donate donate";
     }
     .video {
         align-items: flex-end;
@@ -1423,7 +1646,7 @@ a {
     .panda-block-content {
         column-gap: 30px;
     }
-    .panda-text {
+    .gigant-panda-text {
         font-size: 22px;
     }
     .panda-foto {
@@ -1440,6 +1663,10 @@ a {
     }
     .line-block {
         display: none;
+    }
+    .description-block {
+        width: 100%;
+        padding-bottom: 265px;
     }
     .footer-content {
         padding-top: 40px;
@@ -1492,9 +1719,6 @@ a {
     .copy-rights-block {
         grid-area: copy-rights-block;
         justify-self: end;
-    }
-    .footer-content {
-        width: 91%;
     }
     .footer-menu {
         margin-left: 86px;
